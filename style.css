@@ -31,6 +31,7 @@ body{
   position: absolute;
   margin-right: 40px;
   border: 1px solid;
+  padding: 5px;
  }
   .card-text .card-title{
     background-image: var(--primary-color);
