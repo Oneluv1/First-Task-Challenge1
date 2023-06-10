@@ -25,3 +25,17 @@ try {
 } catch (error) {
 	console.error(error);
 }
+
+const output = document.getElementById('output');
+      function fetchData() {
+         fetch('https://ajayakv-rest-countries-v1.p.rapidapi.com/rest/v1/all')
+         .then(response => response.json())
+         .then(data => {
+            output.innerHTML += "id = " + data.name;
+            output.innerHTML += "brand = " + data.population;
+            output.innerHTML += "category = " + data.region;
+            output.innerHTML += "price = " + data.capital;
+           
+         })
+      }
+   
