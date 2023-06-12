@@ -3,10 +3,18 @@
   --secondary-color: #212121;
  
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body{
   background-color: #a4bced;
 }
-
+.dark{
+  position: relative;
+  margin-left: 65em;
+}
 #moon{
   width: 30px;
   cursor: pointer;
@@ -14,7 +22,7 @@ body{
   float: right;
   margin-top: -39px;
   position:relative;
-  margin-left: 40px
+  margin-left: 60px
 }
  .form{
   margin-left: 23px;
@@ -25,6 +33,12 @@ body{
   border: 1px solid;
   height: 35px;
  }
+
+ .tops{
+  width: 1.2rem;
+  margin-left: -18rem;
+  margin-top: -0.2rem;
+ }
  .btn-group {
   display: flex;
   float: right;
@@ -33,23 +47,28 @@ body{
   border: 1px solid;
   padding: 5px;
  }
-  .card-text .card-title{
-    background-image: var(--primary-color);
-  }
 
 .dark-theme{
   background-color: #1c1414;
-  color: hwb(0 100% 0%);
+  color: hwb(258 4% 14%);
 }
-.row {
-  margin: left 10px; 
+
+.card-img-top{
+  height: 7.5rem; 
+}
+  
+#page{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card{
+ 
   justify-content: center;
-  margin: 10px;
+  width: 18em;
+  display: flex;
+  margin-bottom: 2em;
 }
-p{
-  color: rgb(55, 0, 255);
-}
-.icons{
-  text-decoration-style: none;
-  text-decoration: none;
+.cards{
+  margin-left: 1em;
 }

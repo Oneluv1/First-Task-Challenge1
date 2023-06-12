@@ -15,149 +15,42 @@
       
     </div>
   </nav>
-  <img id="moon" src="moon-icon.png" alt=" Dark Mode">
-    <br>
-    <div>
-      <input class="form" type="search" placeholder="Search for a country" aria-label="Search">
-      
+  <img id="moon" src="moon-icon.png" alt="Dark Mode">
 
+    <div>
+      <br>
+      <input class="form" type="search" placeholder="Search for a country" aria-label="Search">
+      <img src="search-icon.png" class="tops" alt="">
     
   </button>
   <select class="btn-group">
     <option value="" disabled="disabled" selected="selected">Filter by Region</option>
-    <option onclick = "fetchData()"value="1">Africa</option>
-    <option onclick = "fetchData()"value="2">America</option>
-    <option onclick = "fetchData()"value="1">Asia</option>
-    <option onclick = "fetchData()"value="1">Europe</option>
-    <option onclick = "fetchData()"value="1">Oceania</option>
+    <option id="Afri" onclick = "fetchData()"value="1">Africa</option>
+    <option id="Ame" onclick = "fetchData()"value="2">America</option>
+    <option id="Asi" onclick = "fetchData()"value="3">Asia</option>
+    <option id="Euro" onclick = "fetchData()"value="4">Europe</option>
+    <option id="Ocean" onclick = "fetchData()"value="5">Oceania</option>
      
 </select>
 </div>
     </div>
     <br>
-    <div class="row row-cols-1 row-cols-md-6 g-4">
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="country-logo">Country Logo</h5>
-            <ul class="icons">
-              <li><a class="" id="country" href="#">Name:</a></li>
-              <li><a class="" id="country" href="#">Population: </a></li>
-              <li><a class="" id="country" href="#">Region:</a></li>
-              <li><a class="" id="country" href="#">Capital: </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="country-logo">Country Logo</h5>
-            <ul class="">
-              <li><a class="" id="country" href="#">Name:</a></li>
-              <li><a class="" id="country" href="#">Population: </a></li>
-              <li><a class="" id="country" href="#">Region:</a></li>
-              <li><a class="" id="country" href="#">Capital: </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="country-logo">Country Logo</h5>
-            <ul class="">
-              <li><a class="" id="country" href="#">Name:</a></li>
-              <li><a class="" id="country" href="#">Population: </a></li>
-              <li><a class="" id="country" href="#">Region:</a></li>
-              <li><a class="" id="country" href="#">Capital: </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Country Logo</h5>
-            <ul class="">
-              <li><a class="" id="country" href="#">Name:</a></li>
-              <li><a class="" id="country" href="#">Population: </a></li>
-              <li><a class="" id="country" href="#">Region:</a></li>
-              <li><a class="" id="country" href="#">Capital: </a></li>
-            </ul>
+    
+  <div id="page">
 
-            
+        <div class="card">
+          <!--<img src="Flag-Nigeria.jpg" class="card-img-top" alt="...">
+          <div class="card-body" id>
+            <h5 class="card-title">Name</h5>
+            <p class="" id="country">Population</p>
+            <p class="" id="country">Region</p>
+            <p class="" id="country">Capital</p>
           </div>
-        </div>
+        </div>-->
         
       </div>
     </div>
-
-    <div class="row row-cols-1 row-cols-md-6 g-4">
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="country-logo">Country Logo</h5>
-            <ul class="icons">
-              <li><a class="" id="country" href="#">Name:</a></li>
-              <li><a class="" id="country" href="#">Population: </a></li>
-              <li><a class="" id="country" href="#">Region:</a></li>
-              <li><a class="" id="country" href="#">Capital: </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="country-logo">Country Logo</h5>
-            <ul class="">
-              <li><a class="" id="country" href="#">Name:</a></li>
-              <li><a class="" id="country" href="#">Population: </a></li>
-              <li><a class="" id="country" href="#">Region:</a></li>
-              <li><a class="" id="country" href="#">Capital: </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="country-logo">Country Logo</h5>
-            <ul class="">
-              <li><a class="" id="country" href="#">Name:</a></li>
-              <li><a class="" id="country" href="#">Population: </a></li>
-              <li><a class="" id="country" href="#">Region:</a></li>
-              <li><a class="" id="country" href="#">Capital: </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Country Logo</h5>
-            <ul class="">
-              <li><a class="" id="country" href="#">Name:</a></li>
-              <li><a class="" id="country" href="#">Population: </a></li>
-              <li><a class="" id="country" href="#">Region:</a></li>
-              <li><a class="" id="country" href="#">Capital: </a></li>
-            </ul>
-
-            
-          </div>
-        </div>
-        
-      </div>
-    </div>
+    
  
 
 

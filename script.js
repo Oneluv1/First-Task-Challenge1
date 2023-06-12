@@ -8,8 +8,32 @@ moon.onclick = function(){
   moon.src = "moon-icon.png";
 }
 }
+fetch('https://restcountries.com/v3.1/all')
+.then((data)=>{
+  //console.log(data)
+  return data.json();
+}).then ((givendata)=>{
+  //console.log(givendata);
+  let data1 = "";
+  givendata.map((values)=>{
+    data1+= `<div id="page">
+      <div class="card">
+        <img src= ${values.flags.png} class="card-img-top" alt="...">
+        <div class="cards">
+          <h5 class="card-title">${ values.name.common}</h5>
+          <p class="" id="country">${ values.population }</p>
+          <p class="" id="country">${ values.region}
+          <p class="" id="country">${ values.capital}</p>
+        </div>
+        </div>
+      </div>`
+  });
+  document.getElementById("page").innerHTML =data1;
 
-const url = 'https://ajayakv-rest-countries-v1.p.rapidapi.com/rest/v1/all';
+}).catch((err)=>{
+  console.log(err);
+}) 
+/*const url = 'https://ajayakv-rest-countries-v1.p.rapidapi.com/rest/v1/all';
 const options = {
 	method: 'GET',
 	headers: {
@@ -37,5 +61,5 @@ let output = document.getElementById('country');
             output.innerHTML += "capital = " + data.capital;
            
          })
-      }
+      }*/
    
