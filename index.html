@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<head role="banner">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Countries API Fetch</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -19,26 +18,26 @@
 
     <div>
       <br>
-      <input class="form" type="search" placeholder="Search for a country" aria-label="Search">
+      <input class="form" id="search-item" type="search" placeholder="Search for a country" aria-label="Search" onkeyup="search()">
       <img src="search-icon.png" class="tops" alt="">
     
   </button>
   <select class="btn-group">
     <option value="" disabled="disabled" selected="selected">Filter by Region</option>
-    <option id="Afri" onclick = "fetchData()"value="1">Africa</option>
-    <option id="Ame" onclick = "fetchData()"value="2">America</option>
-    <option id="Asi" onclick = "fetchData()"value="3">Asia</option>
-    <option id="Euro" onclick = "fetchData()"value="4">Europe</option>
-    <option id="Ocean" onclick = "fetchData()"value="5">Oceania</option>
+    <option id="afri" onclick = "fetchData()"value="1">Africa</option>
+    <option id="ame" onclick = "fetchData()"value="2">America</option>
+    <option id="asi" onclick = "fetchData()"value="3">Asia</option>
+    <option id="euro" onclick = "fetchData()"value="4">Europe</option>
+    <option id="ocean" onclick = "fetchData()"value="5">Oceania</option>
      
 </select>
 </div>
     </div>
     <br>
     
-  <div id="page">
+  <div class="pages" id="page">
 
-        <div class="card">
+       
           <!--<img src="Flag-Nigeria.jpg" class="card-img-top" alt="...">
           <div class="card-body" id>
             <h5 class="card-title">Name</h5>
@@ -48,7 +47,7 @@
           </div>
         </div>-->
         
-      </div>
+  
     </div>
     
  
@@ -56,6 +55,6 @@
 
 
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"></script>
 </body>
 </html>

@@ -47,10 +47,21 @@ body{
   border: 1px solid;
   padding: 5px;
  }
+ .dark-theme{
+  background-color: var(--secondary-color)
 
-.dark-theme{
-  background-color: #1c1414;
-  color: hwb(258 4% 14%);
+ }
+ .dark-theme .form{
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 98%);
+}
+.dark-theme .btn-group{
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%) ;
+}
+.dark-theme .card{
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
 }
 
 .card-img-top{
