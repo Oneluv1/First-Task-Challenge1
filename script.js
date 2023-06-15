@@ -22,9 +22,9 @@ fetch('https://restcountries.com/v3.1/all')
         <img src= ${values.flags.png} class="card-img-top" alt="...">
         <div class="cards">
           <h5 class="card-title">${ values.name.common}</h5>
-          <p class="" id="country">Population: ${ values.population }</p>
-          <p class="" id="country">Region: ${ values.region}
-          <p class="" id="country">Capital: ${ values.capital}</p>
+          <p class="" id="pop">Population: ${ values.population }</p>
+          <p class="" id="reg">Region: ${ values.region}
+          <p class="" id="cap">Capital: ${ values.capital}</p>
         </div>
         </div>`
   });

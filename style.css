@@ -39,13 +39,15 @@ body{
   margin-left: -18rem;
   margin-top: -0.2rem;
  }
- .btn-group {
+ .group {
   display: flex;
   float: right;
-  position: absolute;
-  margin-right: 40px;
+  position: relative;
+  margin-right: 12px;
   border: 1px solid;
+  border-radius: 5px;
   padding: 5px;
+  margin-top: -0.2px;
  }
  .dark-theme{
   background-color: var(--secondary-color)
@@ -55,7 +57,7 @@ body{
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 98%);
 }
-.dark-theme .btn-group{
+.dark-theme .group{
   background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%) ;
 }
